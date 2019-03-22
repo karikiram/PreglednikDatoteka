@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "datotekeudirektoriju01/1.0.0": {
+      "DatotekeUDirektoriju01/1.0.0": {
         "runtime": {
           "DatotekeUDirektoriju01.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "datotekeudirektoriju01/1.0.0": {
+    "DatotekeUDirektoriju01/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

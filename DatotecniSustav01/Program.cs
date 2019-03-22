@@ -66,24 +66,38 @@ namespace DatotecniSustav01
                     ConsoleKeyInfo pritisnutaTipka = Console.ReadKey(true);
                     if (pritisnutaTipka.Key == ConsoleKey.DownArrow)
                     {
+                        Console.SetCursorPosition(1, pokazivacY);
+                        Console.Write(" ");
                         pokazivacY++;
                     }
                     if (Console.KeyAvailable)
                     {
-                        // metoda za otvaranje datoteke u kojoj se nalaze fajlovi
-
-                        ConsoleKeyInfo pritisnutaTipka2 = Console.ReadKey(true);
-                        if (pritisnutaTipka.Key == ConsoleKey.D)
+                        ConsoleKeyInfo pritisnutaTipka3 = Console.ReadKey(true);
+                        if (pritisnutaTipka.Key == ConsoleKey.UpArrow)
                         {
-                            //if (!File.Exists(direktorij))
-                            //{
-                            //    return;
-                            //}
-                            Process.Start("explorer.exe", direktorij);
+                            Console.SetCursorPosition(1, pokazivacY);
+                            Console.Write(" ");
+                            pokazivacY--;
                         }
                     }
-                }
+                    if (Console.KeyAvailable)
+                    {
+
+                            // metoda za otvaranje datoteke u kojoj se nalaze fajlovi
+
+                            ConsoleKeyInfo pritisnutaTipka2 = Console.ReadKey(true);
+                            if (pritisnutaTipka.Key == ConsoleKey.D)
+                            {
+                                //if (!File.Exists(direktorij))
+                                //{
+                                //    return;
+                                //}
+                                Process.Start("explorer.exe", direktorij);
+                            }
+                    
+                    }
             }
+        }
 
             // Console.SetCursorPosition(0, brojRedova);
         } //Main
